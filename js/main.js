@@ -1,3 +1,6 @@
+
+()=> {
+    let theHeader = document.querySelector("#main-header");
 // this is a self-invoking anonymous function
 //it's called the module pattern
 
@@ -6,6 +9,10 @@ let theHeader = document.querySelector("#main-header");
 
 function logElement() {
     console.log('clicked on an element!');
+}
+  
+    theHeader.addEventListener("click", logElement);
+
 }
 
 //listen for a user event, then do something
@@ -16,3 +23,4 @@ theHeader.addEventListener("click", logElement);
 // this is a JS comment
 console.log('this is some text');
 })();
+
