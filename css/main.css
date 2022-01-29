@@ -1,13 +1,17 @@
 .hidden {
-    display:none;
+    display: none;
+}
+
+* {
+    background-color: lightslategray;
 }
 
 .main-heading {
-    color:red; 
+    color: lightcoral; 
     cursor: pointer;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 3em;
+    font-size: 4em;
 }
 
 #svg-grid {
@@ -19,8 +23,11 @@
 
 .container {
     display: flex;
+    justify-content: center;
 }
 
 .container img {
-    width: 100%
+    cursor: pointer;
+    width: 50%;
+    height: 50%;
 }
