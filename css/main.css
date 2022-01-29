@@ -20,18 +20,13 @@
     grid-gap: 20px;
 }
 
-.container-left {
+.container {
     display: flex;
-    float: left;
-}
-
-.container-right {
-    display: flex;
-    float: right;
+    justify-content: center;
 }
 
 .container img {
     cursor: pointer;
-    width: 80%;
-    height: 80%;
+    width: 50%;
+    height: 50%;
 }
