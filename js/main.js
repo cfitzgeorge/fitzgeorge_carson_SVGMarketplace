@@ -1,11 +1,24 @@
 (()=> {
     let SVGIcons = document.querySelectorAll(".container img");
 
-
-    function logElement() {
-    console.log('mouse is on a logic gate');
-    }
-
-    SVGIcons.forEach(container => container.addEventListener("mouseover", logElement,));
-
+    let SVGIcons = 1;
+    $("container img").mouseenter(function(){
+    
+        SVGIcons = SVGIcons+1;
+        if(SVGIcons%2==0)
+        {
+            $(this).addClass("myopacity");
+        }
+        else
+        {
+            $(this).removeClass("myopacity");
+        }
+    
+        $(this).addClass("change").delay(5000).queue(function(){
+            $(this).removeClass("change").dequeue();
+        });
+        
+    });
+    
+ 
 })();
